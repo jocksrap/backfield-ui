@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../index.css';
 
 export function Alert({ message, style }) {
   let styles = ['p-2', 'rounded', 'border'];

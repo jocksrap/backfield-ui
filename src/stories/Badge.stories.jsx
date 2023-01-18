@@ -1,54 +1,60 @@
-import { Alert } from '../components/Alert';
+import { Badge } from '../components/Badge';
 import '../index.css';
 
 export default {
-  title: 'Components/Alert',
-  component: Alert,
+  title: 'Components/Badge',
+  component: Badge,
   argTypes: {
-    message: {
-      options: { type: 'text' },
+    label: {
+      control: { type: 'text' },
     },
     style: {
-      options: ['primary', 'secondary', 'info', 'success', 'warning', 'danger'],
+      options: ['primary', 'secondary', 'info', 'success', 'warning', 'danger', 'dark'],
       control: { type: 'inline-radio' },
     },
   },
 };
 
-const Template = (args) => <Alert {...args} />;
+const Template = (args) => <Badge {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  message: 'There seems to be a problem.',
+  label: 'Primary',
   style: 'primary',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  message: 'There seems to be a problem.',
+  label: 'Secondary',
   style: 'secondary',
 };
 
 export const Info = Template.bind({});
 Info.args = {
-  message: 'There seems to be a problem.',
+  label: 'Info',
   style: 'info',
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  message: 'There seems to be a problem.',
+  label: 'Success',
   style: 'success',
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
-  message: 'There seems to be a problem.',
+  label: 'Warning',
   style: 'warning',
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
-  message: 'There seems to be a problem.',
+  label: 'Danger',
   style: 'danger',
+};
+
+export const Dark = Template.bind({});
+Dark.args = {
+  label: 'Dark',
+  style: 'dark',
 };
