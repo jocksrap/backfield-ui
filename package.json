@@ -1,5 +1,5 @@
 {
-  "name": "backfield-ui",
+  "name": "@jocksrap/backfield-ui",
   "version": "0.0.1",
   "description": "Component library for jocksrap admin.",
   "main": "dist/index.js",
