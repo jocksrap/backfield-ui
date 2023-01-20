@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function TextArea({ label, name, rows, value }) {
+export default function TextArea({ label, name, rows, value }) {
   return (
     <div className='mb-2'>
       <label className='font-semibold text-xs capitalize pl-1 text-zinc-500' htmlFor={name}>

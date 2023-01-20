@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Input({ label, name, placeholder, required, type, value }) {
+export default function Input({ label, name, placeholder, required, type, value }) {
   return (
     <div className='mb-2'>
       <label className='font-semibold text-xs capitalize pl-1 text-zinc-500' htmlFor={name}>

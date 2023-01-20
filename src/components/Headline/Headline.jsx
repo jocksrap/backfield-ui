@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Headline({ level, margin, text }) {
+export default function Headline({ level, margin, text }) {
   const mb = margin === true ? 'mb-2' : '';
 
   switch (level) {

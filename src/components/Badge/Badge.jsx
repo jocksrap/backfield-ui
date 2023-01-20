@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Badge({ label, style }) {
+export default function Badge({ label, style }) {
   let badgeStyle;
   switch (style) {
     case 'primary':

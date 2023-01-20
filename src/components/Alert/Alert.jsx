@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Alert({ message, style }) {
+export default function Alert({ message, style }) {
   let styles = ['p-2', 'rounded', 'border'];
 
   const primaryStyles = ['bg-blue-200', 'text-blue-800', 'border-blue-800'];

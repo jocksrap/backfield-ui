@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function Button({ label, shape, size, style, title, type }) {
+export default function Button({ label, shape, size, style, title, type }) {
   let styles = ['inline-block font-semibold rounded'];
 
   const primaryClasses = ['bg-blue-600', 'text-white', 'hover:bg-blue-700', 'active:bg-blue-600'];

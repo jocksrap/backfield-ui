@@ -1,7 +1,7 @@
 import React from 'react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 
-export function Select({ label, name, options, value }) {
+export default function Select({ label, name, options, value }) {
   return (
     <div className='mb-2'>
       <label className='font-semibold text-xs capitalize pl-1 text-zinc-500' htmlFor={name}>
